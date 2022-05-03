@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <h3>Content Goes Here</h3>
+    <h3> -->Content Goes Here </h3>
 </div>
     
     
@@ -23,5 +23,6 @@ export default {
 
 h3{
     color: white;
+    float: left;
 }
 </style>

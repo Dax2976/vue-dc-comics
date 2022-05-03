@@ -7,7 +7,15 @@
     <div class="CompHero">
       <HeroComp/>
     </div>
-    
+    <div class="bgmain">
+      <div class="main">
+        <MainComp/>
+        <div class="logobg"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <SiteFooter/>
+    </div>
   </div>
 </template>
 
@@ -16,6 +24,7 @@
 import SiteHeader from '@/components/HeaderComp.vue'
 import ContentComp from '@/components/ContentComponent.vue'
 import HeroComp from '@/components/HeroComponent.vue'
+import SiteFooter from '@/components/FooterComp.vue'
 
 
 export default {
@@ -24,6 +33,7 @@ export default {
     SiteHeader,
     ContentComp,
     HeroComp,
+    SiteFooter
   }
 }
 </script>
@@ -46,5 +56,31 @@ export default {
 
 .content{
   background-color: black ;
+}
+
+.bgmain{
+  background-image: url('../src/assets/img/footer-bg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.main{
+  display: flex;
+  height: 300px;
+  width: 80%;
+  margin: auto;
+}
+
+.logobg{
+   background-image: url('../src/assets/img/dc-logo-bg.png');
+   height: 100%;
+   width: 800px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.footer{
+  background-color:#303030 ;
 }
 </style>
