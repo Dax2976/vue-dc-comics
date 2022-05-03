@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <nav>
-            <img src="../assets/img/dc-logo.png" alt="">
+         <img src="../assets/img/dc-logo.png" alt="" class="logo">
+          <nav>
             <ul>
                 <li>
                     <a href="">characters</a>
@@ -17,6 +17,7 @@
                 </li>
             </ul>
         </nav>
+       
     </div>
 </template>
 
@@ -28,6 +29,13 @@ export default {
 
 
 <style lang="scss" scoped>
+.logo{
+   justify-content: center;
+   padding: 1rem;
+}
+nav{
+    padding: 3rem;
+}
 li{
     list-style: none;
     margin: 0 0.5rem;

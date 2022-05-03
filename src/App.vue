@@ -4,6 +4,9 @@
     <div class="content">
       <ContentComp/>
     </div>
+    <div class="CompHero">
+      <HeroComp/>
+    </div>
     
   </div>
 </template>
@@ -12,12 +15,15 @@
 
 import SiteHeader from '@/components/HeaderComp.vue'
 import ContentComp from '@/components/ContentComponent.vue'
+import HeroComp from '@/components/HeroComponent.vue'
+
 
 export default {
   name: 'App',
   components: {
     SiteHeader,
     ContentComp,
+    HeroComp,
   }
 }
 </script>
