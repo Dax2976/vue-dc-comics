@@ -39,6 +39,7 @@ export default {
     justify-content: space-between;
     padding: 4.5rem;
     
+    
 }
 
 .space{
@@ -60,5 +61,6 @@ span{
     text-transform: uppercase;
     font-size: 14px;
     margin: 10px ;
+    
 }
 </style>

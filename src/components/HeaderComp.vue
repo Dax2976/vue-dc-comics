@@ -54,12 +54,13 @@ a {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    padding: 3rem;
+    padding: 4rem;
+    margin: -10px;
     
 }
 
 a:hover{
-    border-bottom: 4px solid #3382F9;
+    border-bottom: 6px solid #3382F9;
     color: #3382F9;
 }
 
