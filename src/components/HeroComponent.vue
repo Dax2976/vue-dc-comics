@@ -18,7 +18,7 @@
                 <span>subscriptions</span>
             </div>
             <div class="space">
-                <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+                <img src="../assets/img/buy-dc-power-visa.svg" alt="" class="visa">
                 <span>dc power visa</span>
             </div> 
         </div>
@@ -27,7 +27,34 @@
 
 <script>
 export default {
-    name: 'HeroComp'
+    name: 'HeroComp',
+    data: function(){
+        return{
+            listaimg:[
+                {
+                    'url': '',
+                    'name': ''
+                },
+                {
+                    'url': '',
+                    'name': ''
+                },
+                {
+                    'url': '',
+                    'name': ''
+                },
+                {
+                    'url': '',
+                    'name': ''
+                },
+                {
+                    'url': '',
+                    'name': ''
+                }
+
+            ]
+        }
+    }
 }
 </script>
 
@@ -41,10 +68,17 @@ export default {
     
     
 }
+img{
+    width: 20%;
+}
+
+.visa{
+    width: 70%;
+}
 
 .space{
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
 }
 
