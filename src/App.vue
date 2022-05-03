@@ -24,6 +24,7 @@
 import SiteHeader from '@/components/HeaderComp.vue'
 import ContentComp from '@/components/ContentComponent.vue'
 import HeroComp from '@/components/HeroComponent.vue'
+import MainComp from '@/components/MainComponent.vue'
 import SiteFooter from '@/components/FooterComp.vue'
 
 
@@ -33,7 +34,8 @@ export default {
     SiteHeader,
     ContentComp,
     HeroComp,
-    SiteFooter
+    SiteFooter,
+    MainComp,
   }
 }
 </script>
