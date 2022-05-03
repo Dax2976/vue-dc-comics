@@ -3,17 +3,8 @@
          <img src="../assets/img/dc-logo.png" alt="" class="logo">
           <nav>
             <ul>
-                <li>
-                    <a href="">characters</a>
-                    <a href="">comics</a>
-                    <a href="">movies</a>
-                    <a href="">tv</a>
-                    <a href="">games</a>
-                    <a href="">collectibiles</a>
-                    <a href="">videos</a>
-                    <a href="">fans</a>
-                    <a href="">news</a>
-                    <a href="">shop</a>
+                <li :key="index" v-for="(elm, index) in navlist">
+                    <a :href="elm.ref">{{elm.name}}</a>
                 </li>
             </ul>
         </nav>
@@ -23,7 +14,53 @@
 
 <script>
 export default {
-    name:'SiteHeader'
+    name:'SiteHeader',
+    data:function(){
+        return{
+            navlist:[
+                {
+                    'name': 'character',
+                    'ref': '/character',
+                },
+                 {
+                    'name': 'comics',
+                    'ref': '/comics' ,
+                },
+                 {
+                    'name': 'movies' ,
+                    'ref': '/movies',
+                },
+                 {
+                    'name': 'tv',
+                    'ref': '/tv',
+                },
+                 {
+                    'name': 'games',
+                    'ref': '/games',
+                },
+                {
+                    'name': 'collectibiles',
+                    'ref': '/collectibiles',
+                },
+                 {
+                    'name': 'videos' ,
+                    'ref': '/videos',
+                },
+                 {
+                    'name': 'fans',
+                    'ref': '/fans',
+                },
+                 {
+                    'name': 'news',
+                    'ref': '/news',
+                },
+                 {
+                    'name':'shop' ,
+                    'ref': '/shop',
+                },
+            ]
+        }
+    }
 }
 </script>
 
