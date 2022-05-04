@@ -72,14 +72,11 @@ img{
     width: 20%;
 }
 
-.visa{
-    width: 70%;
-}
-
 .space{
     display: flex;
     // justify-content: space-between;
     align-items: center;
+    width: calc(100% / 5);
 }
 
 
