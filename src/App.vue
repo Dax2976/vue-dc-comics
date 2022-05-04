@@ -56,9 +56,9 @@ export default {
   box-sizing: border-box;
 }
 
-.content{
-  background-color: black ;
-}
+// .content{
+//   background-color: black ;
+// }
 
 .bgmain{
   background-image: url('../src/assets/img/footer-bg.jpg');
@@ -84,5 +84,6 @@ export default {
 
 .footer{
   background-color:#303030 ;
+  height: 220px;
 }
 </style>

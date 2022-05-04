@@ -1,13 +1,16 @@
 <template>
     <div class="container">
          <img src="../assets/img/dc-logo.png" alt="" class="logo">
-          <nav>
-            <ul>
-                <li :key="index" v-for="(elm, index) in navlist">
-                    <a :href="elm.ref">{{elm.name}}</a>
-                </li>
-            </ul>
-        </nav>
+         <div class="container">
+             <nav>
+                <ul>
+                    <li :key="index" v-for="(elm, index) in navlist">
+                        <a :href="elm.ref">{{elm.name}}</a>
+                    </li>
+                </ul>
+            </nav>
+         </div>
+          
        
     </div>
 </template>
@@ -91,7 +94,7 @@ a {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    padding: 4rem;
+    padding: 62px 50px;
     margin: -10px;
     
 }
